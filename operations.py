@@ -14,6 +14,9 @@ def bindec(num):
 
 
 def decbin(num):
+
+    orig = num
+
     digits = []
 
     if num == 0:
@@ -37,7 +40,7 @@ def decbin(num):
         digits = digits[::-1]
 
 
-        print(num, "in binaries is:", end=" ")
+        print(orig, "in binaries is:", end=" ")
 
         for j in digits:
             print(j, end="")
